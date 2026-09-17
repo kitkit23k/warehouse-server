@@ -1,9 +1,9 @@
 // ============================================================
-// server.js — Render 雲端伺服器
-// 功能：
-// 1. 原有的 /api/items/next、/api/items/result（ESP32-A 取號 / 回報寫入結果）
-// 2. 新增 /api/esp32/report：ESP32 用 HTTPS POST 上傳感測資料
-// 3. 新增 WebSocket server：CodePen 用 wss:// 連線即時接收資料
+// server.js — Render cloud server (English log output version)
+// Functions:
+// 1. /api/items/next, /api/items/result (ESP32-A get ID / report write result)
+// 2. /api/esp32/report: ESP32 uploads sensor data via HTTPS POST
+// 3. WebSocket server: CodePen connects via wss:// to receive live data
 // ============================================================
 
 const express = require('express');
@@ -13,7 +13,7 @@ const WebSocket = require('ws');
 const app = express();
 app.use(express.json());
 
-// CORS：允許 CodePen 網域打 API（若有其他 REST 需求）
+// CORS: allow CodePen domain to call the REST API
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Methods', 'GET,POST,OPTIONS');
@@ -25,8 +25,8 @@ app.use((req, res, next) => {
 const server = http.createServer(app);
 
 // ------------------------------------------------------------
-// WebSocket server（給 CodePen 連線）
-// CodePen 端連線網址：wss://warehouse-server-mv0z.onrender.com
+// WebSocket server (for CodePen)
+// CodePen connection URL: wss://warehouse-server-mv0z.onrender.com
 // ------------------------------------------------------------
 const wss = new WebSocket.Server({ server });
 
@@ -34,17 +34,17 @@ const clients = new Set();
 
 wss.on('connection', (ws) => {
   clients.add(ws);
-  console.log('WebSocket 客戶端已連線，目前連線數 =', clients.size);
+  console.log('WebSocket client connected, total connections =', clients.size);
 
-  ws.send(JSON.stringify({ type: 'hello', message: '已連線到倉庫系統伺服器' }));
+  ws.send(JSON.stringify({ type: 'hello', message: 'Connected to warehouse server' }));
 
   ws.on('close', () => {
     clients.delete(ws);
-    console.log('WebSocket 客戶端已斷線，目前連線數 =', clients.size);
+    console.log('WebSocket client disconnected, total connections =', clients.size);
   });
 
   ws.on('error', (err) => {
-    console.error('WebSocket 錯誤:', err.message);
+    console.error('WebSocket error:', err.message);
   });
 });
 
@@ -58,7 +58,7 @@ function broadcast(data) {
 }
 
 // ------------------------------------------------------------
-// 既有邏輯：貨品編號流水號（沿用你原本的實作，這裡示範記憶體版本）
+// Item ID sequence logic (in-memory counters)
 // ------------------------------------------------------------
 const counters = { A: 0, B: 0, C: 0 };
 
@@ -74,7 +74,7 @@ app.get('/api/items/next', (req, res) => {
 
 app.post('/api/items/result', (req, res) => {
   const { itemId, status } = req.body;
-  console.log('收到寫入結果:', itemId, status);
+  console.log('Received write result:', itemId, status);
 
   if (status === 'success' && itemId) {
     const match = itemId.match(/^ITEM-([A-C])(\d+)$/);
@@ -85,7 +85,7 @@ app.post('/api/items/result', (req, res) => {
     }
   }
 
-  // 同步廣播給 CodePen，讓網頁知道 ESP32-A 寫卡完成
+  // Broadcast to CodePen so the frontend knows ESP32-A finished writing
   broadcast({
     type: 'write_complete',
     itemId,
@@ -96,26 +96,26 @@ app.post('/api/items/result', (req, res) => {
 });
 
 // ------------------------------------------------------------
-// 新增：ESP32 感測資料上報端點
-// ESP32-A（雷射 + RC522）或 ESP32-B（6 顆讀取器）都可以打這支
+// ESP32 sensor data report endpoint
+// Used by ESP32-A (laser + RC522) or ESP32-B (6 readers)
 // ------------------------------------------------------------
 app.post('/api/esp32/report', (req, res) => {
   const data = req.body;
-  console.log('收到 ESP32 上報:', JSON.stringify(data));
+  console.log('Received ESP32 report:', JSON.stringify(data));
 
-  // 直接把收到的 JSON 轉發給所有連線的 CodePen 前端
+  // Forward the received JSON to all connected CodePen clients
   broadcast(data);
 
   res.json({ ok: true, received: data });
 });
 
-// 健康檢查用
+// Health check endpoint
 app.get('/', (req, res) => {
   res.send('Warehouse server is running. WebSocket clients: ' + clients.size);
 });
 
 const PORT = process.env.PORT || 3000;
 server.listen(PORT, () => {
-  console.log('Server 已啟動，監聽 port ' + PORT);
-  console.log('WebSocket server 已就緒，CodePen 請連線 wss://<你的網域>');
+  console.log('Server started, listening on port ' + PORT);
+  console.log('WebSocket server ready, CodePen should connect to wss://<your-domain>');
 });
