@@ -1,0 +1,1742 @@
+{
+  "theme": "dark",
+  "autoRotate": false,
+  "warehouse": {
+    "floorLength": 24,
+    "floorWidth": 8,
+    "aisleWidth": -0.1,
+    "rackRowCount": 3,
+    "rackSpacing": 3.4,
+    "rackWidth": 3,
+    "rackDepth": 1,
+    "rackWidthMeters": 30,
+    "rackDepthMeters": 10,
+    "rackHeight": 6,
+    "wallHeight": 8,
+    "levels": 2,
+    "sideOffset": 0.3,
+    "slotsPerLevel": 3,
+    "columnSpacing": 3.4
+  },
+  "walls": [
+    {
+      "id": "wo4phb88mv0mo8iz",
+      "worldX": -11.5,
+      "worldZ": -12
+    },
+    {
+      "id": "w4hew23pmv0mob4r",
+      "worldX": -11.5,
+      "worldZ": -9
+    },
+    {
+      "id": "w39dsuudmv0mp9a3",
+      "worldX": -11.5,
+      "worldZ": -11
+    },
+    {
+      "id": "w0uchwknmv0mpcpn",
+      "worldX": -11.5,
+      "worldZ": -7
+    },
+    {
+      "id": "wd7m23c1mv0mpf6z",
+      "worldX": -11.5,
+      "worldZ": -4.5
+    },
+    {
+      "id": "w4d33dgsmv0mpnqr",
+      "worldX": -11.5,
+      "worldZ": -5
+    },
+    {
+      "id": "ww9a26b4mv0mpti3",
+      "worldX": -11.5,
+      "worldZ": -2.5
+    },
+    {
+      "id": "weyxbngjmv0mpvzn",
+      "worldX": -11.5,
+      "worldZ": -0.5
+    },
+    {
+      "id": "wp4wnnq1mv0mpxsq",
+      "worldX": -11.5,
+      "worldZ": 1.5
+    },
+    {
+      "id": "wjftloi7mv0mpzmz",
+      "worldX": -11.5,
+      "worldZ": 3.5
+    },
+    {
+      "id": "wwd2un0lmv0mq1tp",
+      "worldX": -11.5,
+      "worldZ": 6
+    },
+    {
+      "id": "wy33isaamv0mq3ks",
+      "worldX": -11.5,
+      "worldZ": 4
+    },
+    {
+      "id": "wm6r091fmv0mq7n1",
+      "worldX": -11.5,
+      "worldZ": 8
+    },
+    {
+      "id": "wr62qyqhmv0mq983",
+      "worldX": -11.5,
+      "worldZ": 10
+    },
+    {
+      "id": "wnok24krmv0mqdmj",
+      "worldX": -11.5,
+      "worldZ": 12
+    },
+    {
+      "id": "wbj3hqh0mv0mqgqz",
+      "worldX": -9.5,
+      "worldZ": 12
+    },
+    {
+      "id": "wmb950w5mv0mqkns",
+      "worldX": -7.5,
+      "worldZ": 12
+    },
+    {
+      "id": "wrunapoumv0mqmff",
+      "worldX": -5.5,
+      "worldZ": 12
+    },
+    {
+      "id": "wz960lmnmv0mquib",
+      "worldX": -3.5,
+      "worldZ": 12
+    },
+    {
+      "id": "wuevfkt4mv0mqwij",
+      "worldX": -1.5,
+      "worldZ": 12
+    },
+    {
+      "id": "wik2zfe9mv0mqyf7",
+      "worldX": 0.5,
+      "worldZ": 12
+    },
+    {
+      "id": "wubnup6hmv0mr110",
+      "worldX": 2.5,
+      "worldZ": 12
+    },
+    {
+      "id": "wqkba849mv0mr5rf",
+      "worldX": 4.5,
+      "worldZ": 12
+    },
+    {
+      "id": "we3u95s9mv0mr79n",
+      "worldX": 6.5,
+      "worldZ": 12
+    },
+    {
+      "id": "w0kocivwmv0mr9sj",
+      "worldX": 8.5,
+      "worldZ": 12
+    }
+  ],
+  "startPoint": {
+    "x": 11,
+    "z": 0
+  },
+  "racks": [
+    {
+      "id": "r1",
+      "col": 0,
+      "row": 0,
+      "levels": [
+        2,
+        1
+      ],
+      "types": [
+        "large",
+        "small"
+      ],
+      "occupancy": [
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "r2",
+      "col": 0,
+      "row": 3,
+      "levels": [
+        1,
+        2
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "r3",
+      "col": 0,
+      "row": 6,
+      "levels": [
+        1,
+        2
+      ],
+      "types": [
+        "small",
+        "large"
+      ],
+      "occupancy": [
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "r4",
+      "col": 3,
+      "row": 0,
+      "levels": [
+        2,
+        2
+      ],
+      "types": [
+        "large",
+        "small"
+      ],
+      "occupancy": [
+        [
+          true,
+          true,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "r5",
+      "col": 3,
+      "row": 3,
+      "levels": [
+        0,
+        2
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "r6",
+      "col": 3,
+      "row": 6,
+      "levels": [
+        1,
+        2
+      ],
+      "types": [
+        "large",
+        "small"
+      ],
+      "occupancy": [
+        [
+          true,
+          false,
+          false
+        ],
+        [
+          true,
+          true,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rfxqv785mv0mlzu5",
+      "col": 0,
+      "row": 6,
+      "worldX": -3,
+      "worldZ": 0,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rbg3sj8kmv0mm9lf",
+      "col": 0,
+      "row": 7,
+      "worldX": -3,
+      "worldZ": 3,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rrsda22zmv0mmebv",
+      "col": 0,
+      "row": 8,
+      "worldX": -6,
+      "worldZ": 0,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "ryilynkvmv0mmfvw",
+      "col": 0,
+      "row": 9,
+      "worldX": -6,
+      "worldZ": 3,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "r0208iylmv0mmh8z",
+      "col": 0,
+      "row": 10,
+      "worldX": -3,
+      "worldZ": 6,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rccnhh92mv0mmiri",
+      "col": 0,
+      "row": 11,
+      "worldX": -6,
+      "worldZ": 6,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "revg79pzmv0mml9n",
+      "col": 0,
+      "row": 12,
+      "worldX": -9,
+      "worldZ": 0,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rfpleccqmv0mmmnh",
+      "col": 0,
+      "row": 13,
+      "worldX": -9,
+      "worldZ": 3,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rgrqftibmv0mmo4b",
+      "col": 0,
+      "row": 14,
+      "worldX": -9,
+      "worldZ": 6,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rz38cihjmv0mmso6",
+      "col": 0,
+      "row": 15,
+      "worldX": 3,
+      "worldZ": -3,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rjxz3nsymv0mmub7",
+      "col": 0,
+      "row": 16,
+      "worldX": 0,
+      "worldZ": -3,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rhmknc05mv0mmvq3",
+      "col": 0,
+      "row": 17,
+      "worldX": -3,
+      "worldZ": -3,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rsmnslrpmv0mmy98",
+      "col": 0,
+      "row": 18,
+      "worldX": -6,
+      "worldZ": -3,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rjw7twdvmv0mmztv",
+      "col": 0,
+      "row": 19,
+      "worldX": -9,
+      "worldZ": -3,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rifc11m3mv0mn33n",
+      "col": 0,
+      "row": 20,
+      "worldX": 3,
+      "worldZ": -6,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "r995oqtqmv0mn4i4",
+      "col": 0,
+      "row": 21,
+      "worldX": 0,
+      "worldZ": -6,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "reehavh2mv0mn5sp",
+      "col": 0,
+      "row": 22,
+      "worldX": -3,
+      "worldZ": -6,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rezqpk5zmv0mn6v7",
+      "col": 0,
+      "row": 23,
+      "worldX": -6,
+      "worldZ": -6,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rismanx4mv0mn8hi",
+      "col": 0,
+      "row": 24,
+      "worldX": -9,
+      "worldZ": -6,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rn2njcfwmv0mnaln",
+      "col": 0,
+      "row": 25,
+      "worldX": 3,
+      "worldZ": -9,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rrg2xicomv0mnbrp",
+      "col": 0,
+      "row": 26,
+      "worldX": 0,
+      "worldZ": -9,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rqkw958amv0mncyo",
+      "col": 0,
+      "row": 27,
+      "worldX": -3,
+      "worldZ": -9,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rq5sfa5lmv0mne2r",
+      "col": 0,
+      "row": 28,
+      "worldX": -6,
+      "worldZ": -9,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rpjpowq4mv0mnfjx",
+      "col": 0,
+      "row": 29,
+      "worldX": -9,
+      "worldZ": -9,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "r7bsv0ymmv0mnhuz",
+      "col": 0,
+      "row": 30,
+      "worldX": 3,
+      "worldZ": -12,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rsaxv6ismv0mnnge",
+      "col": 0,
+      "row": 31,
+      "worldX": 0,
+      "worldZ": -12,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rqc3w968mv0mnppq",
+      "col": 0,
+      "row": 32,
+      "worldX": -3,
+      "worldZ": -12,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rda5gvxfmv0mnr03",
+      "col": 0,
+      "row": 33,
+      "worldX": -6,
+      "worldZ": -12,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rib4fiykmv0mnsyz",
+      "col": 0,
+      "row": 34,
+      "worldX": -9,
+      "worldZ": -12,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "r79zbjmlmv0mp1fv",
+      "col": 0,
+      "row": 42,
+      "worldX": -9,
+      "worldZ": 9,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rwijxz7xmv0mp2kb",
+      "col": 0,
+      "row": 43,
+      "worldX": -6,
+      "worldZ": 9,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "r9k5rjiimv0mp3ws",
+      "col": 0,
+      "row": 44,
+      "worldX": -3,
+      "worldZ": 9,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "ry3xhnj5mv0mp5mj",
+      "col": 0,
+      "row": 45,
+      "worldX": 0,
+      "worldZ": 9,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    },
+    {
+      "id": "r2ba7u3pmv0mp6z5",
+      "col": 0,
+      "row": 46,
+      "worldX": 3,
+      "worldZ": 9,
+      "levels": [
+        0,
+        0
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false
+        ]
+      ],
+      "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ]
+    }
+  ],
+  "goodsSizes": {
+    "small": {
+      "width": 0.823,
+      "depth": 0.411,
+      "height": 0.206
+    },
+    "medium": {
+      "width": 0.514,
+      "depth": 0.514,
+      "height": 0.514
+    },
+    "large": {
+      "width": 0.72,
+      "depth": 0.617,
+      "height": 1.029
+    }
+  },
+  "colors": {
+    "floor": "#efe7d9",
+    "aisle": "#f8f4ec",
+    "gridMajor": "#0b6b6f",
+    "gridMinor": "#d9d0c2",
+    "upright": "#2b6ee7",
+    "beam": "#df533f",
+    "shelf": "#d8c9b2",
+    "lineUpright": "#0f3f88",
+    "lineBeam": "#8c2018",
+    "goods": "#d6a34f",
+    "goodsAlt": "#d98b3a"
+  },
+  "camera": {
+    "x": 14,
+    "y": 11,
+    "z": 16,
+    "targetY": 2.5
+  },
+  "light": {
+    "directionalIntensity": 0.92,
+    "hemisphereIntensity": 0.88
+  }
+}
