@@ -13,6 +13,8 @@ const express = require('express');
 const http = require('http');
 const WebSocket = require('ws');
 const { MongoClient } = require('mongodb');
+const fs = require('fs');
+const path = require('path');
 
 const app = express();
 app.use(express.json());
@@ -157,6 +159,21 @@ app.post('/api/esp32/report', (req, res) => {
 
   res.json({ ok: true, received: data });
 });
+
+const MAPS_DIR = path.join(__dirname, 'maps');
+
+app.get('/api/maps', (req, res) => {
+  fs.readdir(MAPS_DIR, (err, files) => {
+    if (err) return res.json({ maps: [] });
+    const maps = files
+      .filter(f => f.toLowerCase().endsWith('.json'))
+      .sort()
+      .map(f => ({ name: f.replace(/\.json$/i, ''), file: f }));
+    res.json({ maps });
+  });
+});
+
+app.use('/maps', express.static(MAPS_DIR));
 
 app.get('/api/items/counters', (req, res) => {
   res.json({ counters, storage: countersCol ? 'mongodb' : 'memory' });
