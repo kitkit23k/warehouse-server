@@ -2,7 +2,7 @@
   "theme": "dark",
   "autoRotate": false,
   "warehouse": {
-    "floorLength": 24,
+    "floorLength": 26,
     "floorWidth": 8,
     "aisleWidth": -0.1,
     "rackRowCount": 3,
