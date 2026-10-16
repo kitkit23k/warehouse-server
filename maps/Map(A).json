@@ -95,11 +95,6 @@
       "worldZ": 2
     },
     {
-      "id": "wcwcuppomuutgrin",
-      "worldX": -9.5,
-      "worldZ": 0
-    },
-    {
       "id": "w07a9srrmuutgty7",
       "worldX": -7.5,
       "worldZ": 0
@@ -238,6 +233,11 @@
       "id": "wzvla48rmv0agl3a",
       "worldX": -4.5,
       "worldZ": -12.5
+    },
+    {
+      "id": "wm6k13zgmvakosiw",
+      "worldX": -9.5,
+      "worldZ": 0
     }
   ],
   "startPoint": {
@@ -250,8 +250,8 @@
       "col": 0,
       "row": 3,
       "levels": [
-        1,
-        2
+        3,
+        3
       ],
       "types": [
         "large",
@@ -260,25 +260,37 @@
       "occupancy": [
         [
           true,
-          false,
-          false
+          true,
+          true
         ],
         [
           true,
           true,
-          false
+          true
         ]
       ],
       "slotGoods": [
         [
           null,
-          null,
-          null
+          "gdqkoktnu0o",
+          "gx2lkugnu0o"
         ],
         [
           null,
           null,
-          null
+          "gldetcgnu0o"
+        ]
+      ],
+      "slotTypes": [
+        [
+          null,
+          "large",
+          "large"
+        ],
+        [
+          null,
+          null,
+          "large"
         ]
       ]
     },
@@ -287,8 +299,8 @@
       "col": 0,
       "row": 6,
       "levels": [
-        1,
-        2
+        3,
+        3
       ],
       "types": [
         "small",
@@ -297,25 +309,37 @@
       "occupancy": [
         [
           true,
-          false,
-          false
+          true,
+          true
         ],
         [
           true,
           true,
-          false
+          true
         ]
       ],
       "slotGoods": [
         [
           null,
-          null,
-          null
+          "gppekc3nu0o",
+          "gsd7jbxnu0o"
         ],
         [
           null,
           null,
-          null
+          "gleej6ynu0o"
+        ]
+      ],
+      "slotTypes": [
+        [
+          null,
+          "large",
+          "large"
+        ],
+        [
+          null,
+          null,
+          "medium"
         ]
       ]
     },
@@ -324,8 +348,8 @@
       "col": 3,
       "row": 0,
       "levels": [
-        2,
-        2
+        3,
+        3
       ],
       "types": [
         "large",
@@ -335,24 +359,36 @@
         [
           true,
           true,
-          false
+          true
         ],
         [
           true,
           true,
-          false
+          true
         ]
       ],
       "slotGoods": [
         [
           null,
           null,
-          null
+          "g60xizknu0o"
+        ],
+        [
+          null,
+          "gdhedurp6z3",
+          "gefk17wnu0o"
+        ]
+      ],
+      "slotTypes": [
+        [
+          null,
+          null,
+          "large"
         ],
         [
           null,
           null,
-          null
+          "large"
         ]
       ]
     },
@@ -361,8 +397,8 @@
       "col": 3,
       "row": 3,
       "levels": [
-        0,
-        2
+        3,
+        3
       ],
       "types": [
         "large",
@@ -370,26 +406,38 @@
       ],
       "occupancy": [
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ],
         [
           true,
           true,
-          false
+          true
         ]
       ],
       "slotGoods": [
         [
-          null,
-          null,
-          null
+          "g9bah3unu0o",
+          "gzmpfvmnu0o",
+          "g7kkzp4nu0p"
         ],
         [
           null,
           null,
-          null
+          "ghwbp3qnu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "medium",
+          "medium",
+          "small"
+        ],
+        [
+          null,
+          null,
+          "small"
         ]
       ]
     },
@@ -398,8 +446,8 @@
       "col": 3,
       "row": 6,
       "levels": [
-        1,
-        2
+        3,
+        3
       ],
       "types": [
         "large",
@@ -408,25 +456,37 @@
       "occupancy": [
         [
           true,
-          false,
-          false
+          true,
+          true
         ],
         [
           true,
           true,
-          false
+          true
         ]
       ],
       "slotGoods": [
         [
           null,
-          null,
-          null
+          "gehcywonu0p",
+          "gur6qlhnu0p"
         ],
         [
           null,
           null,
-          null
+          "g4curhunu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          null,
+          "small",
+          "large"
+        ],
+        [
+          null,
+          null,
+          "large"
         ]
       ]
     },
@@ -467,6 +527,18 @@
           null,
           null
         ]
+      ],
+      "slotTypes": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
       ]
     },
     {
@@ -476,7 +548,7 @@
       "worldX": 3,
       "worldZ": -3,
       "levels": [
-        2,
+        3,
         3
       ],
       "types": [
@@ -487,7 +559,7 @@
         [
           true,
           true,
-          false
+          true
         ],
         [
           true,
@@ -499,7 +571,19 @@
         [
           null,
           null,
+          "gdar0tpnu0p"
+        ],
+        [
+          null,
+          null,
           null
+        ]
+      ],
+      "slotTypes": [
+        [
+          null,
+          null,
+          "large"
         ],
         [
           null,
@@ -515,8 +599,8 @@
       "worldX": 9,
       "worldZ": -6,
       "levels": [
-        0,
-        0
+        3,
+        3
       ],
       "types": [
         "large",
@@ -524,26 +608,38 @@
       ],
       "occupancy": [
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ],
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ]
       ],
       "slotGoods": [
         [
-          null,
-          null,
-          null
+          "g8u3fldnu0p",
+          "g3mdbjbnu0p",
+          "gb01oaqnu0p"
         ],
         [
-          null,
-          null,
-          null
+          "geaaunxnu0p",
+          "g1rrdqfnu0p",
+          "gi2kcdcnu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "small",
+          "large",
+          "small"
+        ],
+        [
+          "large",
+          "medium",
+          "medium"
         ]
       ]
     },
@@ -554,8 +650,8 @@
       "worldX": 6,
       "worldZ": -6,
       "levels": [
-        0,
-        0
+        3,
+        3
       ],
       "types": [
         "large",
@@ -563,26 +659,38 @@
       ],
       "occupancy": [
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ],
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ]
       ],
       "slotGoods": [
         [
-          null,
-          null,
-          null
+          "gqee66fnu0p",
+          "g3ymwbfnu0p",
+          "gafkl8rnu0p"
         ],
         [
-          null,
-          null,
-          null
+          "g9nn71inu0p",
+          "g3ka9aunu0p",
+          "g3pkw7knu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "large",
+          "medium",
+          "medium"
+        ],
+        [
+          "small",
+          "medium",
+          "large"
         ]
       ]
     },
@@ -593,8 +701,8 @@
       "worldX": 3,
       "worldZ": -6,
       "levels": [
-        0,
-        0
+        3,
+        3
       ],
       "types": [
         "large",
@@ -602,26 +710,38 @@
       ],
       "occupancy": [
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ],
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ]
       ],
       "slotGoods": [
         [
-          null,
-          null,
-          null
+          "gi44h61nu0p",
+          "gdrlknjnu0p",
+          "gohr8z3nu0p"
         ],
         [
-          null,
-          null,
-          null
+          "ge09ls5nu0p",
+          "gioqf0dnu0p",
+          "g4f7avxnu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "large",
+          "large",
+          "large"
+        ],
+        [
+          "medium",
+          "medium",
+          "small"
         ]
       ]
     },
@@ -633,7 +753,7 @@
       "worldZ": 0,
       "levels": [
         3,
-        2
+        3
       ],
       "types": [
         "large",
@@ -647,7 +767,7 @@
         ],
         [
           true,
-          false,
+          true,
           true
         ]
       ],
@@ -659,7 +779,19 @@
         ],
         [
           null,
+          "goyhf68nu0p",
+          null
+        ]
+      ],
+      "slotTypes": [
+        [
           null,
+          null,
+          null
+        ],
+        [
+          null,
+          "small",
           null
         ]
       ]
@@ -671,46 +803,7 @@
       "worldX": 6,
       "worldZ": 3,
       "levels": [
-        0,
-        0
-      ],
-      "types": [
-        "large",
-        "large"
-      ],
-      "occupancy": [
-        [
-          false,
-          false,
-          false
-        ],
-        [
-          false,
-          false,
-          false
-        ]
-      ],
-      "slotGoods": [
-        [
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null
-        ]
-      ]
-    },
-    {
-      "id": "rawp5j97muq8yid0",
-      "col": 0,
-      "row": 15,
-      "worldX": 0,
-      "worldZ": -6,
-      "levels": [
-        2,
+        3,
         3
       ],
       "types": [
@@ -721,7 +814,58 @@
         [
           true,
           true,
-          false
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "slotGoods": [
+        [
+          "gw1q9ksnu0p",
+          "gd3y8mvnu0p",
+          "gysamvanu0p"
+        ],
+        [
+          "gembt0lnu0p",
+          "ggwrv3znu0p",
+          "gcu8ndmnu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "medium",
+          "medium",
+          "small"
+        ],
+        [
+          "medium",
+          "large",
+          "large"
+        ]
+      ]
+    },
+    {
+      "id": "rawp5j97muq8yid0",
+      "col": 0,
+      "row": 15,
+      "worldX": 0,
+      "worldZ": -6,
+      "levels": [
+        3,
+        3
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          true,
+          true,
+          true
         ],
         [
           true,
@@ -733,7 +877,19 @@
         [
           null,
           null,
+          "gi93infnu0p"
+        ],
+        [
+          null,
+          null,
           null
+        ]
+      ],
+      "slotTypes": [
+        [
+          null,
+          null,
+          "large"
         ],
         [
           null,
@@ -769,6 +925,18 @@
         ]
       ],
       "slotGoods": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "slotTypes": [
         [
           null,
           null,
@@ -818,6 +986,18 @@
           null,
           null
         ]
+      ],
+      "slotTypes": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
       ]
     },
     {
@@ -850,6 +1030,18 @@
         [
           null,
           "gpb4tb9ru1x",
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
+      ],
+      "slotTypes": [
+        [
+          null,
+          null,
           null
         ],
         [
@@ -896,6 +1088,18 @@
           null,
           null
         ]
+      ],
+      "slotTypes": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null
+        ]
       ]
     },
     {
@@ -905,7 +1109,7 @@
       "worldX": 0,
       "worldZ": -11,
       "levels": [
-        2,
+        3,
         3
       ],
       "types": [
@@ -916,7 +1120,7 @@
         [
           true,
           true,
-          false
+          true
         ],
         [
           true,
@@ -928,7 +1132,19 @@
         [
           null,
           null,
+          "gc9kx5anu0p"
+        ],
+        [
+          null,
+          null,
           null
+        ]
+      ],
+      "slotTypes": [
+        [
+          null,
+          null,
+          "medium"
         ],
         [
           null,
@@ -944,7 +1160,7 @@
       "worldX": 3,
       "worldZ": -11,
       "levels": [
-        2,
+        3,
         3
       ],
       "types": [
@@ -954,7 +1170,7 @@
       "occupancy": [
         [
           true,
-          false,
+          true,
           true
         ],
         [
@@ -966,7 +1182,19 @@
       "slotGoods": [
         [
           null,
+          "g7cwu64nu0p",
+          null
+        ],
+        [
           null,
+          null,
+          null
+        ]
+      ],
+      "slotTypes": [
+        [
+          null,
+          "medium",
           null
         ],
         [
@@ -984,7 +1212,7 @@
       "worldZ": -11,
       "levels": [
         3,
-        2
+        3
       ],
       "types": [
         "large",
@@ -997,7 +1225,7 @@
           true
         ],
         [
-          false,
+          true,
           true,
           true
         ]
@@ -1009,7 +1237,19 @@
           null
         ],
         [
+          "gvaj0ycnu0p",
           null,
+          null
+        ]
+      ],
+      "slotTypes": [
+        [
+          null,
+          null,
+          null
+        ],
+        [
+          "large",
           null,
           null
         ]
@@ -1022,8 +1262,8 @@
       "worldX": -3,
       "worldZ": 0,
       "levels": [
-        1,
-        2
+        3,
+        3
       ],
       "types": [
         "large",
@@ -1031,21 +1271,33 @@
       ],
       "occupancy": [
         [
-          false,
           true,
-          false
+          true,
+          true
         ],
         [
           true,
           true,
-          false
+          true
         ]
       ],
       "slotGoods": [
         [
+          "ghmjld3nu0p",
+          null,
+          "gjvijqinu0p"
+        ],
+        [
           null,
           null,
-          null
+          "gc2z93pod1g"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "small",
+          null,
+          "small"
         ],
         [
           null,
@@ -1061,8 +1313,8 @@
       "worldX": -3,
       "worldZ": 3,
       "levels": [
-        0,
-        0
+        3,
+        3
       ],
       "types": [
         "large",
@@ -1070,26 +1322,38 @@
       ],
       "occupancy": [
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ],
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ]
       ],
       "slotGoods": [
         [
-          null,
-          null,
-          null
+          "gc2za9nnu0p",
+          "gsfqit8nu0p",
+          "gkh7u1knu0p"
         ],
         [
-          null,
-          null,
-          null
+          "g0ql4exnu0p",
+          "glsyldlnu0p",
+          "g829icgnu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "small",
+          "medium",
+          "large"
+        ],
+        [
+          "medium",
+          "small",
+          "medium"
         ]
       ]
     },
@@ -1100,8 +1364,8 @@
       "worldX": 6,
       "worldZ": 6,
       "levels": [
-        0,
-        0
+        3,
+        3
       ],
       "types": [
         "large",
@@ -1109,26 +1373,38 @@
       ],
       "occupancy": [
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ],
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ]
       ],
       "slotGoods": [
         [
-          null,
-          null,
-          null
+          "g1r3dmenu0p",
+          "gd2sdr9nu0p",
+          "g539xebnu0p"
         ],
         [
-          null,
-          null,
-          null
+          "gns53adnu0p",
+          "g3siwbanu0p",
+          "gwm7ayvnu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "large",
+          "small",
+          "small"
+        ],
+        [
+          "large",
+          "large",
+          "small"
         ]
       ]
     },
@@ -1139,8 +1415,8 @@
       "worldX": -6,
       "worldZ": 3,
       "levels": [
-        0,
-        0
+        3,
+        3
       ],
       "types": [
         "large",
@@ -1148,26 +1424,38 @@
       ],
       "occupancy": [
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ],
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ]
       ],
       "slotGoods": [
         [
-          null,
-          null,
-          null
+          "gf3eek3nu0p",
+          "glcl09unu0p",
+          "g1xl2lcnu0p"
         ],
         [
-          null,
-          null,
-          null
+          "gv94b2knu0p",
+          "g8pdhgonu0p",
+          "gcdtn9knu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "medium",
+          "large",
+          "medium"
+        ],
+        [
+          "medium",
+          "medium",
+          "medium"
         ]
       ]
     },
@@ -1178,8 +1466,8 @@
       "worldX": -3,
       "worldZ": 6,
       "levels": [
-        0,
-        0
+        3,
+        3
       ],
       "types": [
         "large",
@@ -1187,26 +1475,38 @@
       ],
       "occupancy": [
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ],
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ]
       ],
       "slotGoods": [
         [
-          null,
-          null,
+          "g6gkqe8nu0p",
+          "g61ohxenu0p",
+          "gmc68gzph29"
+        ],
+        [
+          "gtsyqhonu0p",
+          "g26pr2vnu0p",
+          "giut5e0nu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "medium",
+          "medium",
           null
         ],
         [
-          null,
-          null,
-          null
+          "medium",
+          "large",
+          "small"
         ]
       ]
     },
@@ -1217,8 +1517,8 @@
       "worldX": -6,
       "worldZ": 6,
       "levels": [
-        0,
-        0
+        3,
+        3
       ],
       "types": [
         "large",
@@ -1226,26 +1526,38 @@
       ],
       "occupancy": [
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ],
         [
-          false,
-          false,
-          false
+          true,
+          true,
+          true
         ]
       ],
       "slotGoods": [
         [
-          null,
-          null,
-          null
+          "gky78otnu0p",
+          "g42koyunu0p",
+          "grbuhspnu0p"
         ],
         [
-          null,
-          null,
-          null
+          "givxyg9nu0p",
+          "gm1u3csnu0p",
+          "g3seofynu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "small",
+          "small",
+          "large"
+        ],
+        [
+          "large",
+          "medium",
+          "large"
         ]
       ]
     },
@@ -1256,8 +1568,8 @@
       "worldX": 0,
       "worldZ": 0,
       "levels": [
-        2,
-        2
+        3,
+        3
       ],
       "types": [
         "large",
@@ -1265,25 +1577,37 @@
       ],
       "occupancy": [
         [
-          false,
+          true,
           true,
           true
         ],
         [
           true,
-          false,
+          true,
           true
         ]
       ],
       "slotGoods": [
         [
+          "gha3ykznu0p",
           null,
+          null
+        ],
+        [
+          "g0n5jlyow0x",
+          "gmcwbn2nu0p",
+          null
+        ]
+      ],
+      "slotTypes": [
+        [
+          "small",
           null,
           null
         ],
         [
           null,
-          null,
+          "large",
           null
         ]
       ]
@@ -1295,281 +1619,8 @@
       "worldX": 6,
       "worldZ": 10,
       "levels": [
-        0,
-        0
-      ],
-      "types": [
-        "large",
-        "large"
-      ],
-      "occupancy": [
-        [
-          false,
-          false,
-          false
-        ],
-        [
-          false,
-          false,
-          false
-        ]
-      ],
-      "slotGoods": [
-        [
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null
-        ]
-      ]
-    },
-    {
-      "id": "rdm01nhrmv0aedjq",
-      "col": 0,
-      "row": 29,
-      "worldX": 9,
-      "worldZ": 10,
-      "levels": [
-        0,
-        0
-      ],
-      "types": [
-        "large",
-        "large"
-      ],
-      "occupancy": [
-        [
-          false,
-          false,
-          false
-        ],
-        [
-          false,
-          false,
-          false
-        ]
-      ],
-      "slotGoods": [
-        [
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null
-        ]
-      ]
-    },
-    {
-      "id": "r2czfgu6mv0aeg12",
-      "col": 0,
-      "row": 30,
-      "worldX": 3,
-      "worldZ": 10,
-      "levels": [
-        0,
-        0
-      ],
-      "types": [
-        "large",
-        "large"
-      ],
-      "occupancy": [
-        [
-          false,
-          false,
-          false
-        ],
-        [
-          false,
-          false,
-          false
-        ]
-      ],
-      "slotGoods": [
-        [
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null
-        ]
-      ]
-    },
-    {
-      "id": "rwafc1r4mv0aeh84",
-      "col": 0,
-      "row": 31,
-      "worldX": 0,
-      "worldZ": 10,
-      "levels": [
-        0,
-        0
-      ],
-      "types": [
-        "large",
-        "large"
-      ],
-      "occupancy": [
-        [
-          false,
-          false,
-          false
-        ],
-        [
-          false,
-          false,
-          false
-        ]
-      ],
-      "slotGoods": [
-        [
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null
-        ]
-      ]
-    },
-    {
-      "id": "rmbtdu21mv0aeieb",
-      "col": 0,
-      "row": 32,
-      "worldX": -3,
-      "worldZ": 10,
-      "levels": [
-        0,
-        0
-      ],
-      "types": [
-        "large",
-        "large"
-      ],
-      "occupancy": [
-        [
-          false,
-          false,
-          false
-        ],
-        [
-          false,
-          false,
-          false
-        ]
-      ],
-      "slotGoods": [
-        [
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null
-        ]
-      ]
-    },
-    {
-      "id": "ru1ajyommv0aek3j",
-      "col": 0,
-      "row": 33,
-      "worldX": -6,
-      "worldZ": 10,
-      "levels": [
-        0,
-        0
-      ],
-      "types": [
-        "large",
-        "large"
-      ],
-      "occupancy": [
-        [
-          false,
-          false,
-          false
-        ],
-        [
-          false,
-          false,
-          false
-        ]
-      ],
-      "slotGoods": [
-        [
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null
-        ]
-      ]
-    },
-    {
-      "id": "rvglkkpjmv0aemww",
-      "col": 0,
-      "row": 34,
-      "worldX": -9,
-      "worldZ": 10,
-      "levels": [
-        0,
-        0
-      ],
-      "types": [
-        "large",
-        "large"
-      ],
-      "occupancy": [
-        [
-          false,
-          false,
-          false
-        ],
-        [
-          false,
-          false,
-          false
-        ]
-      ],
-      "slotGoods": [
-        [
-          null,
-          null,
-          null
-        ],
-        [
-          null,
-          null,
-          null
-        ]
-      ]
-    },
-    {
-      "id": "rx5k2252mv0ag0mm",
-      "col": 0,
-      "row": 34,
-      "worldX": 9,
-      "worldZ": -11,
-      "levels": [
         3,
-        2
+        3
       ],
       "types": [
         "large",
@@ -1584,7 +1635,364 @@
         [
           true,
           true,
-          false
+          true
+        ]
+      ],
+      "slotGoods": [
+        [
+          "g4oej41nu0p",
+          "ggkogsynu0p",
+          "g5hf4bpnu0p"
+        ],
+        [
+          "gbjl1annu0p",
+          "g2jq7iznu0p",
+          "grh1yygnu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "large",
+          "small",
+          "medium"
+        ],
+        [
+          "large",
+          "medium",
+          "medium"
+        ]
+      ]
+    },
+    {
+      "id": "rdm01nhrmv0aedjq",
+      "col": 0,
+      "row": 29,
+      "worldX": 9,
+      "worldZ": 10,
+      "levels": [
+        3,
+        3
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "slotGoods": [
+        [
+          "grfaq1ynu0p",
+          "gdf49z2nu0p",
+          "gphem2knu0p"
+        ],
+        [
+          "gdhwibjnu0p",
+          "go0xprsnu0p",
+          "ga1ulo3nu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "medium",
+          "small",
+          "medium"
+        ],
+        [
+          "medium",
+          "medium",
+          "medium"
+        ]
+      ]
+    },
+    {
+      "id": "r2czfgu6mv0aeg12",
+      "col": 0,
+      "row": 30,
+      "worldX": 3,
+      "worldZ": 10,
+      "levels": [
+        3,
+        3
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "slotGoods": [
+        [
+          "g3tzlujnu0p",
+          "ge6ddymnu0p",
+          "gge5zpinu0p"
+        ],
+        [
+          "g34unr5nu0p",
+          "gz6mw7onu0p",
+          "geb0l00nu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "medium",
+          "large",
+          "medium"
+        ],
+        [
+          "medium",
+          "medium",
+          "small"
+        ]
+      ]
+    },
+    {
+      "id": "rwafc1r4mv0aeh84",
+      "col": 0,
+      "row": 31,
+      "worldX": 0,
+      "worldZ": 10,
+      "levels": [
+        3,
+        3
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "slotGoods": [
+        [
+          "g5rj9k7nu0p",
+          "glejjfnnu0p",
+          "gih2qtjnu0p"
+        ],
+        [
+          "gp5xsyvnu0p",
+          "gmncreonu0p",
+          "gi5qjwqqjjr"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "medium",
+          "small",
+          "small"
+        ],
+        [
+          "large",
+          "small",
+          null
+        ]
+      ]
+    },
+    {
+      "id": "rmbtdu21mv0aeieb",
+      "col": 0,
+      "row": 32,
+      "worldX": -3,
+      "worldZ": 10,
+      "levels": [
+        3,
+        3
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "slotGoods": [
+        [
+          "g3reg4bnu0p",
+          "g0e8c3lnu0p",
+          "gln9o8xq9b8"
+        ],
+        [
+          "gyidf5hnu0p",
+          "glksjfenu0p",
+          "g2yn7pbnu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "small",
+          "small",
+          null
+        ],
+        [
+          "medium",
+          "small",
+          "small"
+        ]
+      ]
+    },
+    {
+      "id": "ru1ajyommv0aek3j",
+      "col": 0,
+      "row": 33,
+      "worldX": -6,
+      "worldZ": 10,
+      "levels": [
+        3,
+        3
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "slotGoods": [
+        [
+          "guayxwwnu0p",
+          "gmryba4nu0p",
+          "gavw73knu0p"
+        ],
+        [
+          "gsguk33nu0p",
+          "gwroeefnu0p",
+          "g93dkwbnu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "large",
+          "small",
+          "large"
+        ],
+        [
+          "medium",
+          "small",
+          "medium"
+        ]
+      ]
+    },
+    {
+      "id": "rvglkkpjmv0aemww",
+      "col": 0,
+      "row": 34,
+      "worldX": -9,
+      "worldZ": 10,
+      "levels": [
+        3,
+        3
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
+        ]
+      ],
+      "slotGoods": [
+        [
+          "g0zl0ymnu0p",
+          "g6s0rmpnu0p",
+          "gucfcvenu0p"
+        ],
+        [
+          "g5blvb6nu0p",
+          "gm6njbynu0p",
+          "gnehqu2nu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          "small",
+          "small",
+          "medium"
+        ],
+        [
+          "small",
+          "large",
+          "large"
+        ]
+      ]
+    },
+    {
+      "id": "rx5k2252mv0ag0mm",
+      "col": 0,
+      "row": 34,
+      "worldX": 9,
+      "worldZ": -11,
+      "levels": [
+        3,
+        3
+      ],
+      "types": [
+        "large",
+        "large"
+      ],
+      "occupancy": [
+        [
+          true,
+          true,
+          true
+        ],
+        [
+          true,
+          true,
+          true
         ]
       ],
       "slotGoods": [
@@ -1596,7 +2004,19 @@
         [
           null,
           null,
+          "gugs7yqnu0p"
+        ]
+      ],
+      "slotTypes": [
+        [
+          null,
+          null,
           null
+        ],
+        [
+          null,
+          null,
+          "medium"
         ]
       ]
     }
