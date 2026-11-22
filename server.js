@@ -5,6 +5,8 @@
 // 3. POST /api/esp32/report            -> ESP32 uploads data, forwarded to CodePen via WebSocket
 // 4. GET  /api/items/counters          -> view current counters (for checking)
 // 5. WebSocket server                  -> CodePen connects with wss://<your-domain>
+// 6. POST /api/esp32/task              -> CodePen sends in-progress tasks (for ESP32-B LED/RFID)
+// 7. GET  /api/esp32/tasks             -> ESP32-B polls the in-progress tasks
 //
 // Environment variable required on Render: MONGODB_URI
 // ============================================================
@@ -158,6 +160,30 @@ app.post('/api/esp32/report', (req, res) => {
   broadcast(data);
 
   res.json({ ok: true, received: data });
+});
+
+// ------------------------------------------------------------
+// Task sync: CodePen tells ESP32-B which tasks are in progress
+// POST /api/esp32/task   body: { active, tasks: [{taskId, uid, level, slot, mismatch}] }
+// GET  /api/esp32/tasks  ESP32-B polls this every 2-3 seconds
+// CodePen resends every 30 s (heartbeat); stale after TASK_TTL_MS so the LED never stays on
+// ------------------------------------------------------------
+const TASK_TTL_MS = 120000;
+let activeTasks = { active: false, tasks: [], updatedAt: 0 };
+
+app.post('/api/esp32/task', (req, res) => {
+  const body = req.body || {};
+  const tasks = Array.isArray(body.tasks) ? body.tasks : [];
+  activeTasks = { active: tasks.length > 0, tasks, updatedAt: Date.now() };
+  console.log('Task sync, count =', tasks.length);
+  res.json({ ok: true, count: tasks.length });
+});
+
+app.get('/api/esp32/tasks', (req, res) => {
+  const expired = Date.now() - activeTasks.updatedAt > TASK_TTL_MS;
+  res.set('Cache-Control', 'no-store');
+  if (expired) return res.json({ active: false, tasks: [] });
+  res.json({ active: activeTasks.active, tasks: activeTasks.tasks });
 });
 
 const MAPS_DIR = path.join(__dirname, 'maps');
