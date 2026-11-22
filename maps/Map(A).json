@@ -905,7 +905,7 @@
       "worldX": -3,
       "worldZ": -3,
       "levels": [
-        3,
+        2,
         3
       ],
       "types": [
@@ -915,7 +915,7 @@
       "occupancy": [
         [
           true,
-          true,
+          false,
           true
         ],
         [
@@ -1059,7 +1059,7 @@
       "worldZ": -11,
       "levels": [
         3,
-        3
+        2
       ],
       "types": [
         "large",
@@ -1072,7 +1072,7 @@
           true
         ],
         [
-          true,
+          false,
           true,
           true
         ]
@@ -1084,7 +1084,7 @@
           "gru6hzl7q7b"
         ],
         [
-          "gt59gyp86mq",
+          null,
           null,
           null
         ]
@@ -1314,7 +1314,7 @@
       "worldZ": 3,
       "levels": [
         3,
-        3
+        2
       ],
       "types": [
         "large",
@@ -1329,7 +1329,7 @@
         [
           true,
           true,
-          true
+          false
         ]
       ],
       "slotGoods": [
@@ -1341,7 +1341,7 @@
         [
           "g0ql4exnu0p",
           "glsyldlnu0p",
-          "g829icgnu0p"
+          null
         ]
       ],
       "slotTypes": [
@@ -1353,7 +1353,7 @@
         [
           "medium",
           "small",
-          "medium"
+          null
         ]
       ]
     },
