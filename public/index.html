@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RackLab 3D Warehouse Visualization</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="app">
+  <header class="topbar" id="topbarPanel">
+    <div class="brand">
+      <div class="logo" aria-label="RackLab">
+        <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="7" y="8" width="8" height="32"></rect>
+          <rect x="33" y="8" width="8" height="32"></rect>
+          <path d="M15 14h18M15 24h18M15 34h18"></path>
+          <path d="M8 40h32"></path>
+        </svg>
+      </div>
+      <div>
+        <h1 class="title"> 3D Warehouse System </h1>
+        <div class="sub"></div>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="btn" id="themeToggle" type="button" aria-label="Toggle theme">🌓</button>
+      <button class="btn" id="resetView" type="button">Reset view</button>
+    </div>
+  </header>
+
+  <section class="panel worker-status-bar" id="workerStatusBar">
+    <div class="worker-status-title">Live Worker Status</div>
+    <div id="workerStatusList" class="worker-status-list"></div>
+    <div class="worker-status-legend">
+      <span class="legend-dot idle"></span>Available
+      <span class="legend-dot busy"></span>Working
+    </div>
+  </section>
+
+  <main class="layout">
+    <section class="viewer" aria-label="3D view">
+      <button id="exitAdminBtn" class="exit-admin-btn">Switch to Viewer Mode</button>
+      <button id="editModeLabel" class="edit-mode-label" type="button">End Edit Mode</button>
+
+      <!-- Add Item button and pop-up menu -->
+      <button id="addItemBtn" class="add-item-btn admin-only-btn" type="button">➕ Add Item</button>
+      <div id="addItemMenu" class="rack-context-menu add-item-menu">
+        <div class="rack-context-menu-title">Add item</div>
+        <button id="addItemRack" class="side-menu-btn" type="button">🗄️ Rack</button>
+        <button id="addItemWall" class="side-menu-btn" type="button">🧱 Wall</button>
+        <button id="addItemStart" class="side-menu-btn" type="button">📍 Start point</button>
+      </div>
+
+      <div id="scene"></div>
+    </section>
+
+    <aside class="sidebar" id="sidebarPanel">
+      <section class="panel pad edit-only-panel">
+        <h2>Quick Parameters</h2>
+        <div class="grid">
+          <div class="field"><label for="rackCount">Number of rack rows</label><input id="rackCount" type="number" min="1" max="12"></div>
+          <div class="field"><label for="levels">Levels</label><input id="levels" type="number" min="1" max="6"></div>
+          <div class="field"><label for="rackHeight">Rack height</label><input id="rackHeight" type="number" min="2" max="12" step="0.1"></div>
+          <div class="field"><label for="rackWidth">Rack width</label><input id="rackWidth" type="number" min="0.8" max="5" step="0.1"></div>
+          <div class="field"><label for="rackDepth">Rack depth</label><input id="rackDepth" type="number" min="0.4" max="3" step="0.1"></div>
+          <div class="field"><label for="aisleWidth">Aisle width</label><input id="aisleWidth" type="number" min="0" max="12" step="0.1"></div>
+          <div class="field"><label for="rackSpacing">Rack spacing</label><input id="rackSpacing" type="number" min="1.2" max="5" step="0.1"></div>
+          <div class="field"><label for="floorLength">Floor length</label><input id="floorLength" type="number" min="10" max="80" step="1"></div>
+        </div>
+      </section>
+
+      <!-- The "Warehouse Statistics" panel was removed; the hidden fields below only let updateStats() keep writing normally and are not displayed -->
+      <div id="legacyStatsHidden" hidden>
+        <span id="statRackUnits">0</span>
+        <span id="statShelves">0</span>
+        <span id="statAisle">0</span>
+        <span id="statHeight">0</span>
+      </div>
+
+      <!-- Goods registration (manual entry): after submitting, the system assigns a slot and a worker automatically -->
+      <section class="panel pad">
+        <h2>Goods Registration</h2>
+        <p class="help">Enter the goods data by hand. After submitting, the system assigns a slot and a worker automatically (* = required)</p>
+        <div class="grid">
+          <div class="field"><label for="goodsSource">Source</label><input id="goodsSource" type="text" placeholder="Supplier / source (optional)"></div>
+          <div class="field"><label for="goodsModel">Model *</label><input id="goodsModel" type="text" placeholder="SKU-1023"></div>
+          <div class="field"><label for="goodsPO">Production Order *</label><input id="goodsPO" type="text" placeholder="PO-20260821-01"></div>
+          <div class="field"><label for="goodsSize">Goods size *</label>
+            <select id="goodsSize">
+              <option value="">Select</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </div>
+          <div class="field" style="grid-column:1 / -1">
+            <label for="goodsUid">RFID card UID *</label>
+            <div style="display:flex;gap:8px;align-items:center">
+              <input id="goodsUid" type="text" placeholder="Press &quot;Scan card&quot; and tap a card, or type it directly" style="flex:1">
+              <button class="btn" id="goodsUidScan" type="button" style="white-space:nowrap">Scan card</button>
+            </div>
+            <p class="help" id="goodsUidStatus" style="margin:6px 0 0"></p>
+          </div>
+        </div>
+        <div class="actions" style="margin-top:12px">
+          <button class="btn primary" id="submitGoods" type="button">Register goods</button>
+        </div>
+      </section>
+
+      <section class="panel pad">
+        <h2>Tasks in Progress (waiting for RC522)</h2>
+        <p class="help">A worker has been assigned; waiting for the RC522 to confirm the actual placement position</p>
+        <ul id="taskList" class="task-list"></ul>
+      </section>
+
+      <!-- RC522 sensing confirmation -->
+      <section class="panel pad">
+        <h2>RC522 Placement Confirmation</h2>
+        <p class="help">Simulates the actual UID and position sensed by the RC522</p>
+        <div class="grid">
+          <div class="field" style="grid-column:1 / -1"><label for="rc522Task">Select task</label><select id="rc522Task"></select></div>
+          <div class="field"><label for="rc522Level">Level</label><select id="rc522Level"></select></div>
+          <div class="field"><label for="rc522Slot">Slot</label><select id="rc522Slot"></select></div>
+          <div class="field" style="grid-column:1 / -1"><label for="rc522Uid">UID actually sensed by the RC522</label><input id="rc522Uid" type="text" placeholder="Enter UID"></div>
+        </div>
+        <div class="actions" style="margin-top:12px">
+          <button class="btn primary" id="confirmRc522" type="button">Confirm placement</button>
+        </div>
+      </section>
+
+      <section class="panel pad">
+        <h2>Maps</h2>
+        <p class="help">Click a map name to load it. Map files come from the maps folder of the GitHub repository</p>
+        <div id="mapListBox" class="map-list-box">
+          <div class="map-empty">Loading…</div>
+        </div>
+        <div class="actions" style="margin-top:12px">
+          <button class="btn" id="mapRefresh" type="button">Refresh list</button>
+          <button class="btn primary" id="downloadJson" type="button">Download current map</button>
+        </div>
+        <div hidden>
+          <textarea id="jsonEditor" spellcheck="false" aria-label="JSON settings"></textarea>
+          <button id="applyJson" type="button"></button>
+          <button id="syncJson" type="button"></button>
+          <button id="loadExample" type="button"></button>
+        </div>
+      </section>
+    </aside>
+  </main>
+</div>
+
+<!-- Rack click menu -->
+<div id="rackContextMenu" class="rack-context-menu">
+  <div class="rack-context-menu-title">Rack actions</div>
+  <button id="rackAddVertical" class="side-menu-btn" type="button">➕ Add (vertical)</button>
+  <button id="rackAddHorizontal" class="side-menu-btn" type="button">➕ Add (horizontal)</button>
+  <button id="rackDelete" class="side-menu-btn danger" type="button">🗑 Delete this rack</button>
+</div>
+
+<!-- Rack slot action menu -->
+<div id="slotActionMenu" class="slot-action-menu">
+  <div class="rack-context-menu-title">Slot actions</div>
+  <button id="slotAddGoods" class="side-menu-btn" type="button">➕ Add goods</button>
+  <button id="slotDeleteGoods" class="side-menu-btn danger" type="button">🗑 Delete goods</button>
+</div>
+
+<!-- New: wall click menu -->
+<div id="wallContextMenu" class="rack-context-menu">
+  <div class="rack-context-menu-title">Wall</div>
+  <button id="wallDelete" class="side-menu-btn danger" type="button">🗑 Delete this wall</button>
+</div>
+
+<!-- New: start point click menu -->
+<div id="startContextMenu" class="rack-context-menu">
+  <div class="rack-context-menu-title">Start point</div>
+  <button id="startDelete" class="side-menu-btn danger" type="button">🗑 Delete start point</button>
+</div>
+
+<!-- Gamification Module -->
+<div id="statsScreen" class="stats-screen">
+  <div class="stats-screen-header">
+    <h2>Warehouse Statistics</h2>
+    <button id="statsBackBtn" class="side-menu-btn" type="button">← Back</button>
+  </div>
+  <div class="stats-summary">
+    <div class="stats-card"><div class="stats-card-label">Racks in stock</div><div class="stats-card-value" id="statsTotalRacks">0</div></div>
+    <div class="stats-card"><div class="stats-card-label">Goods in stock</div><div class="stats-card-value" id="statsTotalGoods">0</div></div>
+    <div class="stats-card"><div class="stats-card-label">Times goods were taken</div><div class="stats-card-value" id="statsTotalRemoved">0</div></div>
+    <div class="stats-card"><div class="stats-card-label">Placement tasks completed</div><div class="stats-card-value" id="statsTotalPlaced">0</div></div>
+  </div>
+  <div class="stats-log-title">Pick-up log</div>
+  <ul id="statsLogList" class="stats-log-list"></ul>
+  <div class="stats-log-title">Placement task log</div>
+  <ul id="statsTaskLogList" class="stats-log-list"></ul>
+</div>
+
+<div id="sideMenuToggle" class="side-menu-toggle">☰</div>
+<div id="sideMenuPanel" class="side-menu-panel">
+  <button id="modeStats" class="side-menu-btn" type="button">📊 Statistics Mode</button>
+  <button id="modeOrders" class="side-menu-btn" type="button">📋 Orders</button>
+  <button id="modeAdmin" class="side-menu-btn" type="button">🛠️ Enter Admin Mode</button>
+  <button id="modeEdit" class="side-menu-btn admin-only-btn" type="button">✏️ Edit Mode</button>
+</div>
+
+<!-- Orders Screen -->
+<div id="ordersScreen" class="stats-screen orders-screen">
+  <div class="stats-screen-header">
+    <h2>Orders</h2>
+    <button id="ordersBackBtn" class="side-menu-btn" type="button">← Back</button>
+  </div>
+  <p class="help">These are the write orders received by the Render server. Press "Start task" to assign a worker and show the optimal route.</p>
+  <ul id="ordersList" class="task-list orders-list"></ul>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
